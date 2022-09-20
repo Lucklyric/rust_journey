@@ -74,7 +74,36 @@ impl<T: Display + PartialOrd> Pair<T> {
     }
 }
 
+fn test(a: i32) -> bool {
+    if a > 100 {
+        return false;
+    };
+
+    let mut i = 0;
+    loop {
+        i = i + 1;
+
+        if i == 5 {
+            break;
+        }
+    }
+
+
+    if a > 3 {
+        true
+    } else {
+        false
+    }
+
+
+}
+
 fn main() {
+
+    let c = {true};
+
+    println!("{}", c);
+
     println!("Hello, world!");
 
     let article = NewsArticle {
@@ -107,4 +136,6 @@ fn main() {
     // };
 
     // let y = Pair::new(article, article2);
+
+    test(1);
 }
